@@ -1,0 +1,27 @@
+{
+  "name": "@truckup/bindings",
+  "version": "0.0.21",
+  "description": "Generated TypeScript types for enhanced type safety and code consistency across projects. This package includes shared types, schemas, and axios request definitions to streamline development and ensure a consistent API contract.",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "author": "TruckUp",
+  "license": "MIT",
+  "scripts": {
+    "source": "mkdir -p src && cp ../functions/src/openAPI/out/api-docs.yaml ./src",
+    "generate-ts-clients": "openapi -i ./src/api-docs.yaml -o ./src -c axios --indent 2 --exportSchemas true",
+    "bindings:generate": "yarn source && yarn generate-ts-clients",
+    "bump-version": "yarn version --patch --no-commit-hooks --no-git-tag-version",
+    "deploy": "yarn publish"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gettruckup/truckup-stack.git",
+    "directory": "packages/bindings"
+  },
+  "dependencies": {
+    "openapi-typescript-codegen": "^0.25.0"
+  }
+}

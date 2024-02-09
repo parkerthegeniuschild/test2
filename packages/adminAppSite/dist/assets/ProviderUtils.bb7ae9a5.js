@@ -1,0 +1,1 @@
+import{t as r}from"./index.7dbc0443.js";const a=[{id:1040,name:"Backup Provider",value:"BACKUP",color:r.palette.primary.main},{id:1068,name:"Pro Provider",value:"PRO",color:r.palette.primary.main}];export{a as p};

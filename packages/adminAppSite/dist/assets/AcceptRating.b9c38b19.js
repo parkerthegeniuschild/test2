@@ -1,0 +1,1 @@
+import{j as c,aC as o,az as r}from"./index.7dbc0443.js";import{u as i,S as m}from"./providerHelpers.5b5f7e8f.js";const l=({value:a,...e})=>{const s=i(),t=a&&a*100||0;return c(m,{startIcon:c(o,{className:r({[s.lowAcceptRate]:t<60},{[s.mediumAcceptRate]:t>=60&&t<80},{[s.highAcceptRate]:t>=80})}),label:`${t.toFixed(0)} %`,...e})};export{l as A};

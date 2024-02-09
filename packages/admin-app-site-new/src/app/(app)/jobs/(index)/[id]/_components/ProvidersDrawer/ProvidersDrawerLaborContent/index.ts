@@ -1,0 +1,1 @@
+export { ProvidersDrawerLaborContent } from './ProvidersDrawerLaborContent';

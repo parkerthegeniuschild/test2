@@ -1,0 +1,674 @@
+{
+  "entryId": "5I19LBX9glWk4nZAOkYDMQ",
+  "contentType": "legalDocument",
+  "revision": 69,
+  "createdAt": "2021-08-16T13:47:56.797Z",
+  "updatedAt": "2023-07-26T14:51:27.216Z",
+  "title": "Service Provider Terms",
+  "fields": {
+    "title": { "en-US": "Service Provider Terms" },
+    "slug": { "en-US": "service-provider-terms" },
+    "legalText": {
+      "en-US": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "These Service Provider Terms apply to all Service Providers who provide (or offer to provide) services to Customers through the Platform. By providing or offering to provide such services, you are agreeing to these Service Provider Terms.",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Please note that (a) these Service Provider Terms contain additional rights and obligations that each Service Provider accepts in addition to our Terms of Service available at truckup.com/legal/terms-of-service, (b) unless otherwise defined here, all defined phrases will have the definitions assigned to them in our Terms of Service, and (c) if any provision in these Service Provider Terms conflicts with a provision in our Terms of Service, then the provision in these Service Provider Terms will prevail.",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "If you or your business do not agree to the terms described here, then you and your business should not use the Platform.",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Customer Jobs",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "heading-2"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Posting & Accepting",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "heading-3"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "If we approve your status as a Service Provider within the System, then we may present (but we are not required to present) you with one or more Jobs. “Job” means an opportunity to provide vehicle and equipment repair services to our Customers in exchange for compensation by us. ",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "We reserve the right to disclose as much, or as little, information about each Job as we deem appropriate under the circumstances. By becoming a Service Provider, you are not required to accept any Jobs. However, if a Service Provider accepts a Job, the Service Provider must provide their services for that Job in accordance with these Service Provider Terms and must complete the Job.",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Liability Waiver",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "heading-3"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "The Service Provider shall sign the Truckup Liability Waiver & Release prior to performing any services for a Customer.",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Service Provider & Customer Communication",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "heading-3"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "The Platform include features to allow Service Providers to communicate directly with Customers. The Service Provider shall conduct all communications (other than face-to-face communications) with the Customers and all of the Customer’s representatives through the Platform, except in situations where the features are not available for any reason.",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Completion of Jobs",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "heading-3"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "After a Service Provider indicates they have completed a Job within the Platform, we will request approval and confirmation from the Customer. After the Customer approves the services, the Job will be deemed completed.",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Standard of Care & Compliance with Laws",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "heading-3"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "The Service Provider represents that the Service Provider has the competency, knowledge, and skills, and the necessary tools and equipment to perform the service for each Job accepted by the Service Provider. If a Service Provider discovers that the Service Provider does not meet those qualifications after accepting a Job, then the Service Provider shall promptly notify the Customer and us and stop working on the Job (except that the Service provider shall return the vehicle and equipment to the state and condition it was in prior to the Service Provider beginning the Job.",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Service Providers shall (a) use proper safety equipment based on the circumstances of each Job and Job site, including safety cones, triangles, hazard or strobe lights, immediately upon arrival to the Job site, (b) perform their services and deliver and install parts in a timely and workmanlike manner, using knowledge and recommendations which meet or exceed generally acceptable standards in the vehicle and equipment repair services industry, and (c) comply with all applicable laws, rules, and regulations, including any applicable Department of Transportation rules and regulations.",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Subcontracting Not Permitted",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "heading-3"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Service Providers shall perform all services under each Job and shall not subcontract all or any portion of the services under a Job to any other individual or business.",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Payments",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "heading-2"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Customer Payments",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "heading-3"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "If you accept a Job, then you shall ensure that the Customer pays us for your services and any parts you deliver or install for the Customer. We may provide you with payment procedures, which we may update from time to time, and you shall comply with all of the same. ",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Payments to Service Providers",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "heading-3"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "We pay Service Providers based on several factors. ",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "content": [
+                      {
+                        "data": {},
+                        "marks": [{ "type": "bold" }],
+                        "value": "Fixed Fees",
+                        "nodeType": "text"
+                      },
+                      {
+                        "data": {},
+                        "marks": [],
+                        "value": ": We may pay each Service Provider a fixed fee for each Job they accept, provided they show up to the Job location and perform an initial, in-person inspection of the scope of the Job. That fixed fee will be described to you within the Platform and is subject to change from Job to Job.",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "paragraph"
+                  }
+                ],
+                "nodeType": "list-item"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "content": [
+                      {
+                        "data": {},
+                        "marks": [{ "type": "bold" }],
+                        "value": "Hourly Rates",
+                        "nodeType": "text"
+                      },
+                      {
+                        "data": {},
+                        "marks": [],
+                        "value": ": We may also pay Service Providers an hourly rate for the time they spend performing services in a Job (excluding travel time to and from the location of the Job). That hourly rate will be described to you within the Platform and is subject to change from Job to Job. For some Jobs, we may offer a minimum, which means that regardless how long the Service Provider takes to perform the Job, we will pay at least that number of hours at the Job’s hourly rate.",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "paragraph"
+                  }
+                ],
+                "nodeType": "list-item"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "content": [
+                      {
+                        "data": {},
+                        "marks": [{ "type": "bold" }],
+                        "value": "Other Payment Options",
+                        "nodeType": "text"
+                      },
+                      {
+                        "data": {},
+                        "marks": [],
+                        "value": ": We may also offer other payment arrangements for Jobs or certain tasks within a Job (in addition to or in replace of the payments described here), as described within the Platform for each Job.",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "paragraph"
+                  }
+                ],
+                "nodeType": "list-item"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "content": [
+                      {
+                        "data": {},
+                        "marks": [{ "type": "bold" }],
+                        "value": "Reimbursements",
+                        "nodeType": "text"
+                      },
+                      {
+                        "data": {},
+                        "marks": [],
+                        "value": ": We will also reimburse Service Providers for parts they purchase on their own behalf and then sell to the Customer during the Job (at the actual value of the expense, without any markups). To receive a reimbursement, the Service Provider must submit the reimbursement using the reimbursement features within the Platform and provide reasonable documentation for each reimbursement to allow us to verify the part and the expense for the part.",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "paragraph"
+                  }
+                ],
+                "nodeType": "list-item"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "content": [
+                      {
+                        "data": {},
+                        "marks": [{ "type": "bold" }],
+                        "value": "Inventory Reimbursements",
+                        "nodeType": "text"
+                      },
+                      {
+                        "data": {},
+                        "marks": [],
+                        "value": ": We may also allow certain Service Providers to purchase parts in anticipation of future Jobs and to receive reimbursements for the same even though the parts have not been purchased by a specific Customer. Service Providers should contact us for instructions on how to purchase parts for inventory and to obtain reimbursements for the same. We reserve the right to approve or deny all such requests in our sole discretion. If we approve a request, then all such parts will be deemed owned by us after we reimburse the Service Provider for the parts and the Service Provider will remain liable to us for payment for any such parts that are not sold to Customers for any reason.",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "paragraph"
+                  }
+                ],
+                "nodeType": "list-item"
+              }
+            ],
+            "nodeType": "unordered-list"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "We will process a payment to the Service Provider for each completed Job by transferring the sums due for that Job to the Service Provider’s payout balance within the Platform. The Service Provider may withdraw funds from the Service Provider’s payout balance at any time (provided it has a positive payout balance) using the features within the Platform.",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Cash Payments from Customers",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "heading-3"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "We may allow some Customers to pay for Jobs with cash (or other payment methods from which the payments go straight to the Service Provider and not us). If a Service Provider completes a Job and is paid directly (with cash or otherwise), then the Service Provider shall ensure that the payment is logged in the Platform as being paid to the Service Provider. The Service Provider shall pay all payments received to us, or if permitted by us, we will deduct the payment amount from the Service Provider’s payout balance within the Platform. If the payout balance goes below zero, then we may offset that negative balance using future funds owed to the Service Provider, or we may require the Service Provider to pay us using immediately available funds.",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Truckup Cards",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "heading-3"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "We may provide certain Service Providers with physical or virtual credit or debit cards owned by Truckup to be used to purchase parts for Customers. Service Providers should contact us for instructions on how to obtain such a card. We reserve the right to approve or deny all such requests in our sole discretion. If we approve a request, then all such cards will continue to be owned by us, and the Service Provider shall (a) comply with all rules and regulations related to the cards which are maintained by us and our payment vendors, and (b) not use the cards for any reason other than the benefit of Truckup. If a Service Provider charges any amount to such card, then the Service Provider will be liable for the amount of each charge until the charge is paid by the Customer.",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Inability to Collect/Chargebacks",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "heading-3"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "If we are unable to charge a Customer the full amount due for a Service Provider’s services within a Job, and the reason is due to the Service Provider’s inability (for any reason) to complete the Job for the Customer, then we reserve the right to reduce payouts to the Service Provider for the applicable Jobs. Additionally, if we are required to issue a refund to a Customer for any reason due to the Service Provider’s negligence or intentional misconduct, then the Service Provider shall refund us for all such amounts promptly upon our request (or we may deduct the same from the Service Provider’s payout balance).",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Payments on Termination",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "heading-3"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "If a Service Provider’s relationship with us ends for any reason, then the parties shall “true up” all payments owed to one another within 30 days of the termination of the relationship. This includes properly accounting for all our inventory which the Service Provider may then hold (this means, at our election, the Service Provider paying us for the inventory it will keep, or the Service Provider returning the inventory to us using instructions provided by us with all freight and shipping paid for by the Service Provider). ",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Confidentiality",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "heading-2"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "As a result of the Service Provider’s relationship with us and performance of services for Customers, the Service Provider is likely to obtain Confidential Information. Accordingly, the Service Provider shall (a) protect the confidentiality of our Confidential Information in the Service Provider’s possession; (b) not use any of our Confidential Information except as contemplated in this Agreement; and (c) not disclose any of our Confidential Information to any third party. Upon the termination of the Service Provider’s relationship with us or the written demand from us, the Service Provider shall promptly deliver to us (or if requested by us, destroy) all our Confidential Information that it then possesses (in all forms including all copies). “Confidential Information” means all our oral and written information which a reasonable person would deem confidential (including third-party information held in confidence by us) which is acquired by or disclosed to the Service Provider. “Confidential Information” does not include information the Service Provider can demonstrate: (i) becomes known to the public through no fault of the Service Provider; (ii) was independently developed by the Service Provider without use of our Confidential Information; or (iii) was rightfully given to the Service Provider by another party. The Service Provider’s confidentiality obligations in these terms shall apply while the Service Provider has a business relationship with us and for five years thereafter.",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Independent Contractor Status",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "heading-2"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "All Service Providers are independent contractors of Truckup LLC, a Missouri limited liability company, and not employees, agents, joint ventures, or partners. We do not exert any control over the number of, or which, Jobs you accept to perform within the Platform. Rather, you will have the sole power to make those decisions. Except as otherwise expressly permitted by us in writing, you will be responsible (at your expense) for all tools and insurance needs including without limitation health, life, liability, and workers’ compensation. ",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "We will not withhold taxes or pay employment-related taxes in connection with our payments to you; rather, you will be responsible for and shall pay all foreign, federal, state, and local taxes, including self-employment taxes, assessed against you resulting from your services provided through the Platform.",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "You will not be covered under our workers’ compensation insurance, and you shall not attempt to hold us liable for any workers’ compensation style claims.  ",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Indemnification",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "heading-2"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "If a third party threatens or files any suit, claim, investigation, or proceeding, against us or our affiliates or their respective owners, directors, officers, managers, employees, contractors, or other representatives (the “",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [{ "type": "bold" }],
+                "value": "Protected Parties",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": "”) as a result of the Service Provider’s breach of or misrepresentation in these Service Provider Terms or our Terms of Service, any breach of or misrepresentation by Service Provider or any of Service Provider’s representatives with respect to any Job which Service Provider accepts, or any negligent or intentional act or omission by Service Provider or any of Service Provider’s representatives, then the Service Provider shall indemnify the Protected Parties against all reasonable expenses which arise or result from the same, including attorneys’ fees, costs, and damages of every kind (the “",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [{ "type": "bold" }],
+                "value": "Losses",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": "”), except to the extent that a Protected Parties negligently or intentionally caused those Losses. For clarity, the Service Provider’s indemnification obligations in these Service Provider Terms are in addition to any indemnification obligations the Service Provider may have in our Terms of Service.",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Insurance",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "heading-2"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "The Service Provider shall, at all times while performing services for a Customer, and for six months thereafter, maintain at its expense: (a) commercial general liability insurance including bodily injury and property damage coverage with minimum limits of $1,000,000 per occurrence and $2,000,000 in the aggregate; (b) automobile insurance on all automobiles operated by the Service Provider while performing services for a Customer with minimum limits of at least $1,000,000 per occurrence, and (c) workers’ compensation insurance as required by law. The Service Provider shall name “Truckup LLC and its affiliates and their respective owners, directors, officers, managers, employees, contractors, or other representatives” as additional insureds under the Service Provider’s commercial general liability and automobile policies. The Service Provider shall deliver certificates of insurance evidencing the insurance required above to us promptly upon our reasonable request.",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      }
+    }
+  }
+}

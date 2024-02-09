@@ -1,0 +1,33 @@
+bug: https://github.com/drizzle-team/drizzle-orm/issues/1171
+solution: https://github.com/drizzle-team/drizzle-orm/pull/1172
+
+diff --git a/node_modules/drizzle-orm/aws-data-api/pg/index.cjs b/node_modules/drizzle-orm/aws-data-api/pg/index.cjs
+index 1e167e5..74b4578 100644
+--- a/node_modules/drizzle-orm/aws-data-api/pg/index.cjs
++++ b/node_modules/drizzle-orm/aws-data-api/pg/index.cjs
+@@ -174,8 +174,8 @@ class AwsDataApiSession extends index.PgSession {
+             database: options.database,
+         };
+     }
+-    prepareQuery(query, fields, transactionId, customResultMapper) {
+-        return new AwsDataApiPreparedQuery(this.client, query.sql, query.params, query.typings ?? [], this.options, fields, transactionId, customResultMapper);
++    prepareQuery(query, fields, name, customResultMapper) {
++        return new AwsDataApiPreparedQuery(this.client, query.sql, query.params, query.typings ?? [], this.options, fields, this.transactionId, customResultMapper);
+     }
+     execute(query) {
+         return this.prepareQuery(this.dialect.sqlToQuery(query), undefined, this.transactionId).execute();
+diff --git a/node_modules/drizzle-orm/aws-data-api/pg/index.mjs b/node_modules/drizzle-orm/aws-data-api/pg/index.mjs
+index 3e21cdc..10ade81 100644
+--- a/node_modules/drizzle-orm/aws-data-api/pg/index.mjs
++++ b/node_modules/drizzle-orm/aws-data-api/pg/index.mjs
+@@ -187,8 +187,8 @@ class AwsDataApiSession extends PgSession {
+             database: options.database,
+         };
+     }
+-    prepareQuery(query, fields, transactionId, customResultMapper) {
+-        return new AwsDataApiPreparedQuery(this.client, query.sql, query.params, query.typings ?? [], this.options, fields, transactionId, customResultMapper);
++    prepareQuery(query, fields, name, customResultMapper) {
++        return new AwsDataApiPreparedQuery(this.client, query.sql, query.params, query.typings ?? [], this.options, fields, this.transactionId, customResultMapper);
+     }
+     execute(query) {
+         return this.prepareQuery(this.dialect.sqlToQuery(query), undefined, this.transactionId).execute();

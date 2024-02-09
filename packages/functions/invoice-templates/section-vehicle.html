@@ -1,0 +1,27 @@
+<li id="vehicle-{{vehicleUnit}}">
+  <!-- Info -->
+  <div
+    class="p-12 pb-8 border non-italic leading-normal break-before-auto min-h-47"
+  >
+    <p class="text-14 font-black">{{vehicleType}} #{{vehicleUnit}}</p>
+    <p class="text-8 font-medium">
+      <span data-vehicleYear="{{vehicleYear}}">{{vehicleYear}} </span>
+      <span data-vehicleManufacturer="{{vehicleManufacturer}}"
+        >{{vehicleManufacturer}}</span
+      >
+      <span data-vehicleModel="{{vehicleModel}}">{{vehicleModel}}</span>
+      <span data-vehicleVIN="{{vehicleVIN}}">— VIN {{vehicleVIN}}</span>
+      <span data-vehicleMileage="{{vehicleMileage}}"
+        >— {{vehicleMileage}} miles</span
+      >
+    </p>
+  </div>
+
+  <!-- Services  -->
+  <ul class="section__services break-before-auto break-inside-avoid">
+    {{services}}
+  </ul>
+
+  <!-- Services subtotal -->
+  {{servicesSubTotal}}
+</li>

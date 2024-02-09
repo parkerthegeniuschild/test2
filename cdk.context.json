@@ -1,0 +1,15 @@
+{
+  "availability-zones:account=693538762481:region=us-east-2": [
+    "us-east-2a",
+    "us-east-2b",
+    "us-east-2c"
+  ],
+  "hosted-zone:account=693538762481:domainName=truckup.tech:region=us-east-2": {
+    "Id": "/hostedzone/Z02572603MR7ZGH484DGB",
+    "Name": "truckup.tech."
+  },
+  "hosted-zone:account=193886518961:domainName=truckup.tech:region=us-east-2": {
+    "Id": "/hostedzone/Z0405905TEAG8224PNKN",
+    "Name": "truckup.tech."
+  }
+}

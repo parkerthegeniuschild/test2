@@ -1,0 +1,1 @@
+ALTER TABLE "job_earnings_item" ALTER COLUMN "quantity" SET DATA TYPE numeric;

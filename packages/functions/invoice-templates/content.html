@@ -1,0 +1,546 @@
+<html lang="en">
+  <body>
+    <div class="container">
+      <main class="content">
+        <!-- Service Info -->
+        <div class="flex justify-between">
+          <div
+            class="text-8 font-normal leading-normal color-black-2 font-inter"
+          >
+            <p class="font-normal">Service location</p>
+            <p class="font-bold">{{locationAddress}}</p>
+          </div>
+
+          <div class="flex text-8 gap-8 min-h-37">
+            <div class="font-normal">
+              <p>Service date</p>
+              <p class="mt-4" data-customerRefOrPO="{{customerRefOrPO}}">
+                Customer ref/PO
+              </p>
+              <p class="mt-4">Job #</p>
+            </div>
+            <div class="w-100 text-right non-italic font-bold leading-normal">
+              <p>{{serviceDate}}</p>
+              <p class="mt-4" data-customerRefOrPO="{{customerRefOrPO}}">
+                {{customerRefOrPO}}
+              </p>
+              <p class="mt-4">{{jobId}}</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bill To -->
+        <div class="grid grid-col-2">
+          <div class="text-8 font-normal non-italic leading-normal pl-24 pt-24">
+            <p>Bill to</p>
+            <p class="text-10 non-italic font-black leading-normal my-4">
+              {{draweeName}}
+            </p>
+            <div class="text-8 non-italic font-normal leading-normal">
+              <p data-draweeAddress1="{{draweeAddress1}}">{{draweeAddress1}}</p>
+              <p data-draweeAddress2="{{draweeAddress2}}">{{draweeAddress2}}</p>
+              <p>
+                <span data-draweeCity="{{draweeCity}}"> {{draweeCity}}, </span>
+                <span data-draweeState="{{draweeState}}">{{draweeState}}</span>
+                <span data-draweeZipCode="{{draweeZipCode}}"
+                  >{{draweeZipCode}}</span
+                >
+              </p>
+            </div>
+          </div>
+          <div class="pt-36 text-right leading-normal">
+            <p class="text-10 italic font-black">Due on receipt</p>
+            <p class="text-20 non-italic font-bold my-6">{{balanceDue}}</p>
+            <q class="text-10 non-italic font-bold">{{paymentStatusText}}</q>
+          </div>
+        </div>
+
+        <!-- Invoice message -->
+        <div class="mt-16 py-4" data-invoiceMessage="{{invoiceMessage}}">
+          <q
+            class="text-10 font-bold leading-normal non-italic line-clamp-5 text-justify last-center"
+          >
+            {{invoiceMessage}}
+          </q>
+        </div>
+
+        <!-- Section Labor -->
+        <div class="break-before-auto mt-16">
+          <div
+            class="flex items-center px-12 text-8 non-italic font-bold h-20 border border-black bg-grey border-b-2"
+          >
+            <p class="w-312">Item</p>
+            <div class="flex-1 grid grid-col-3 text-right">
+              <p>Qty</p>
+              <p>Price</p>
+              <p>Total</p>
+            </div>
+          </div>
+
+          <!-- List of labor items -->
+          <div class="border mt-12">
+            <div class="section__labor__list">
+              <li
+                class="flex items-center px-12 text-8 non-italic font-bold leading-normal h-20"
+              >
+                <p class="w-312">
+                  Labor
+                  <span data-laborSurpassedMinimum="{{laborSurpassedMinimum}}"
+                    >({{laborHours}} hour minimum)</span
+                  >
+                </p>
+                <div class="flex-1 grid grid-col-3 text-right font-normal">
+                  <p>{{laborHoursQuantity}}</p>
+                  <p>{{laborUnitPrice}}</p>
+                  <p>{{laborTotalPrice}}</p>
+                </div>
+              </li>
+            </div>
+
+            <div
+              class="flex items-center px-12 text-8 font-bold h-20 non-italic leading-normal bg-grey break-before_avoid"
+            >
+              <p class="w-312" />
+              <div class="flex-1 grid grid-col-3 text-right">
+                <p class="span-col-2">Labor subtotal</p>
+                <p>{{labourSubtotalPrice}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section Vehicles -->
+        <ul class="section__vehicles mt-12">
+          {{vehicles}}
+        </ul>
+
+        <!-- Job Total -->
+        <div
+          class="mt-12 grid justify-end text-8 font-normal break-inside-avoid"
+        >
+          <!-- Job subtotal -->
+          <div class="border w-240">
+            <div
+              class="px-12 flex justify-end items-center h-20 bg-grey font-bold"
+            >
+              <p>Job subtotal</p>
+              <p class="w-71 text-right">{{jobSubtotalPrice}}</p>
+            </div>
+            <div class="px-12 flex justify-end items-center h-20">
+              <p>Callout</p>
+              <p class="w-71 text-right">{{calloutPrice}}</p>
+            </div>
+            <div
+              class="px-12 flex justify-end items-center h-20"
+              data-fuelSurchargePrice="{{fuelSurchargePrice}}"
+            >
+              <p>Fuel surcharge</p>
+              <p class="w-71 text-right">{{fuelSurchargePrice}}</p>
+            </div>
+            <div
+              class="px-12 flex justify-end items-center h-20 bg-grey font-bold"
+            >
+              <p>Total</p>
+              <p class="w-71 text-right">{{totalJobPrice}}</p>
+            </div>
+          </div>
+
+          <!-- Total paid -->
+          <div class="mt-12 border font-bold">
+            <div class="px-12 flex justify-end items-center h-20 bg-grey">
+              <p class="key">Total paid</p>
+              <p class="w-71 text-right">{{totalAmountPaid}}</p>
+            </div>
+            <div
+              class="px-12 flex justify-end items-center h-20 bg-black text-white"
+            >
+              <p>Balance due</p>
+              <p class="w-71 text-right">{{balanceDue}}</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Roboto;
+    color: #000;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  q {
+    quotes: '***' '***';
+  }
+
+  .container {
+    width: 552px;
+    margin: 0 auto;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .m-0-auto {
+    margin: 0 auto;
+  }
+
+  .justify-center {
+    justify-content: center;
+  }
+
+  .justify-between {
+    justify-content: space-between;
+  }
+
+  .leading-normal {
+    line-height: normal;
+  }
+
+  .color-black-2 {
+    color: #101820;
+  }
+
+  .font-inter {
+    font-family: Inter;
+  }
+
+  .gap-8 {
+    gap: 8px;
+  }
+
+  .mt-4 {
+    margin-top: 4px;
+  }
+
+  .mb-4 {
+    margin-bottom: 4px;
+  }
+
+  .my-4 {
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+
+  .w-100 {
+    width: 100px;
+  }
+
+  .grid-col-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pt-24 {
+    padding-top: 24px;
+  }
+
+  .pl-24 {
+    padding-left: 24px;
+  }
+
+  .text-10 {
+    font-size: 10px;
+  }
+
+  .text-20 {
+    font-size: 20px;
+  }
+
+  .font-black {
+    font-weight: 900;
+  }
+
+  .pt-36 {
+    padding-top: 36px;
+  }
+
+  .italic {
+    font-style: italic;
+  }
+
+  .mt-16 {
+    margin-top: 16px;
+  }
+
+  .py-4 {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .border {
+    border: 1px solid #000;
+  }
+
+  .border-b-2 {
+    border-bottom-width: 2px;
+  }
+
+  .section__labor__list > li:not(:first-child) {
+    border-top: 1px solid #000;
+  }
+
+  .section__vehicles > li:not(:first-child) {
+    margin-top: 12px;
+  }
+
+  .px-12 {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .py-12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .p-12 {
+    padding: 12px;
+  }
+
+  .pl-12 {
+    padding-left: 12px;
+  }
+
+  .pr-12 {
+    padding-right: 12px;
+  }
+
+  .pt-12 {
+    padding-top: 12px;
+  }
+
+  .pb-12 {
+    padding-bottom: 12px;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .items-center {
+    align-items: center;
+  }
+
+  .grid {
+    display: grid;
+  }
+
+  .grid-col-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .text-right {
+    text-align: right;
+  }
+
+  .flex-1 {
+    flex: 1;
+  }
+
+  .font-medium {
+    font-weight: 500;
+  }
+
+  .h-12 {
+    height: 12px;
+  }
+
+  .h-20 {
+    height: 20px;
+  }
+
+  .pb-8 {
+    padding-bottom: 8px;
+  }
+
+  .text-14 {
+    font-size: 14px;
+  }
+
+  .outline {
+    outline: 1px solid red;
+  }
+
+  .text-8 {
+    font-size: 8px;
+  }
+
+  .not-italic {
+    font-style: normal;
+  }
+
+  .font-normal {
+    font-weight: 400;
+  }
+
+  .leading-12 {
+    line-height: 12px;
+  }
+
+  .underline {
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.5px;
+  }
+
+  .w-291 {
+    width: 291px;
+  }
+
+  .w-312 {
+    width: 312px;
+  }
+
+  .font-bold {
+    font-weight: 700;
+  }
+
+  .span-col-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .border-t {
+    border-top: 1px solid #000;
+  }
+
+  .border-b {
+    border-bottom: 1px solid #000;
+  }
+
+  .bg-grey {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .border-1 {
+    border-width: 1px;
+  }
+
+  .border-grey {
+    border-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .bg-black {
+    background-color: #000;
+  }
+
+  .text-white {
+    color: #fff;
+  }
+
+  .bx-1 {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+  }
+
+  .section__services > li {
+    border-inline: 1px solid #000;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .break-inside-avoid {
+    break-inside: avoid-page;
+  }
+
+  .section__services > li:first-child {
+    border-top: none;
+  }
+
+  .section__services > li:not(:first-child) {
+    margin-top: -1px;
+  }
+
+  .section__services > li:last-child {
+    border-bottom: none;
+  }
+
+  .my-6 {
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+
+  .mt-12 {
+    margin-top: 12px;
+  }
+
+  .justify-end {
+    justify-content: end;
+  }
+
+  .break-before-auto {
+    break-before: auto;
+  }
+
+  .break-after-avoid {
+    break-after: avoid-page;
+  }
+
+  .break-before-avoid {
+    break-before: avoid-page;
+  }
+
+  .w-240 {
+    width: 240px;
+  }
+
+  .w-71 {
+    width: 71px;
+  }
+
+  .line-clamp-5 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+  }
+
+  .text-justify {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  .last-center {
+    text-align-last: center;
+  }
+
+  div[data-fuelSurchargePrice='$0.00'],
+  div[data-invoiceMessage='null'],
+  p[data-customerRefOrPO='null'],
+  p[data-draweeAddress1='null'],
+  p[data-draweeAddress2='null'],
+  ul[data-hasParts='false'],
+  span[data-laborSurpassedMinimum='true'],
+  span[data-draweeCity='null'],
+  span[data-draweeState='null'],
+  span[data-draweeZipCode='null'],
+  span[data-vehicleYear='null'],
+  span[data-vehicleManufacturer='null'],
+  span[data-vehicleModel='null'],
+  span[data-vehicleVIN='null'],
+  span[data-vehicleMileage='null'] {
+    display: none;
+  }
+
+  .min-h-37 {
+    min-height: 37px;
+  }
+
+  .min-h-47 {
+    min-height: 47px;
+  }
+</style>

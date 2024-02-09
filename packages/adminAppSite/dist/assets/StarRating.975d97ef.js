@@ -1,0 +1,1 @@
+import{j as t,aB as o,az as r}from"./index.7dbc0443.js";import{u as c,S as e}from"./providerHelpers.5b5f7e8f.js";const g=({value:i,...n})=>{const s=c(),a=i||0;return t(e,{startIcon:t(o,{className:r(s.icon,{[s.lowRating]:a<4},{[s.mediumRating]:a>=4&&a<4.5},{[s.highRating]:a>=4.5})}),label:a.toFixed(1),...n})};export{g as S};

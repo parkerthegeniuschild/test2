@@ -1,0 +1,32 @@
+{
+  "extends": "@tsconfig/node16/tsconfig.json",
+  "include": [
+    "**/*.ts",
+    "../../.sst/types"
+  ],
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "module": "esnext",
+    "baseUrl": ".",
+    "paths": {
+      "@openAPI/*": [
+        "./src/openAPI/*"
+      ],
+      "@core/*": [
+        "./src/core/*"
+      ],
+      "@db/*": [
+        "./src/database/*"
+      ],
+      "@environment": [
+        "./environment"
+      ],
+      "@utils/*": [
+        "../utils/*"
+      ],
+      "@tests/*": [
+        "./tests/*"
+      ]
+    }
+  }
+}

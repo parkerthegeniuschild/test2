@@ -1,0 +1,63 @@
+{
+  "name": "truckup-stack",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "18.*"
+  },
+  "scripts": {
+    "prepare": "./scripts/prepare-packages.sh && husky install",
+    "dev": "TZ=UTC sst dev",
+    "build": "sst build",
+    "deploy": "sst deploy",
+    "remove": "sst remove",
+    "publish": "sst publish",
+    "console": "sst console",
+    "typecheck": "tsc --noEmit",
+    "postinstall": "patch-package",
+    "test": "sst bind vitest run",
+    "test:backend": "yarn test packages/functions",
+    "sso": "./scripts/aws-sso-login.sh",
+    "generate-open-api": "./scripts/generate-open-api.sh"
+  },
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.3",
+    "@types/lodash": "^4.14.192",
+    "@types/luxon": "^3.2.0",
+    "aws-cdk-lib": "2.124.0",
+    "constructs": "10.3.0",
+    "husky": "^8.0.3",
+    "patch-package": "^8.0.0",
+    "postinstall-postinstall": "^2.1.0",
+    "sst": "2.40.1",
+    "type-fest": "^4.8.3",
+    "typescript": "5.1.6",
+    "vitest": "^0.34.3"
+  },
+  "workspaces": [
+    "packages/*",
+    "layers/*/*"
+  ],
+  "nohoist": [
+    "**/packages/bindings/**"
+  ],
+  "dependencies": {
+    "@asteasolutions/zod-to-openapi": "^6.3.0",
+    "@aws-lambda-powertools/logger": "^1.6.0",
+    "@aws-sdk/client-rds-data": "^3.282.0",
+    "@aws-sdk/client-s3": "^3.282.0",
+    "@ringcentral/sdk": "^4.7.4",
+    "@truckup/prettier-config": "1.0.0",
+    "@types/haversine": "^1.1.5",
+    "@typescript-eslint/eslint-plugin": "6.2.1",
+    "@typescript-eslint/parser": "6.2.1",
+    "eslint": "8.46.0",
+    "haversine": "^1.1.1",
+    "jsonwebtoken": "^9.0.0",
+    "lodash": "^4.17.21",
+    "luxon": "^3.3.0",
+    "mime-types": "^2.1.35",
+    "zod": "^3.22.2"
+  }
+}

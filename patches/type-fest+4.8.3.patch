@@ -1,0 +1,13 @@
+diff --git a/node_modules/type-fest/source/camel-cased-properties-deep.d.ts b/node_modules/type-fest/source/camel-cased-properties-deep.d.ts
+index b44482b..693976f 100644
+--- a/node_modules/type-fest/source/camel-cased-properties-deep.d.ts
++++ b/node_modules/type-fest/source/camel-cased-properties-deep.d.ts
+@@ -44,7 +44,7 @@ const result: CamelCasedPropertiesDeep<UserWithFriends> = {
+ @category Template literal
+ @category Object
+ */
+-export type CamelCasedPropertiesDeep<Value, Options extends CamelCaseOptions = {preserveConsecutiveUppercase: true}> = Value extends Function
++export type CamelCasedPropertiesDeep<Value, Options extends CamelCaseOptions = {preserveConsecutiveUppercase: true}> = Value extends Function | Date | RegExp
+ 	? Value
+ 	: Value extends Array<infer U>
+ 		? Array<CamelCasedPropertiesDeep<U, Options>>

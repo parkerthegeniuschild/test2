@@ -1,0 +1,55 @@
+name: 'PR Runner'
+
+on:
+  push:
+    branches:
+      - main
+  # pull_request:
+  #   types: [opened, edited, synchronize, reopened, ready_for_review]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  TestApp:
+    name: Test app
+    runs-on: ubuntu-latest
+    env:
+      RingcentralClientId: ${{ secrets.RINGCENTRALCLIENTID }}
+      RingcentralClientSecret: ${{ secrets.RINGCENTRALCLIENTSECRET }}
+      RingcentralUsername: ${{ secrets.RINGCENTRALUSERNAME }}
+      RingcentralExtension: ${{ secrets.RINGCENTRALEXTENSION }}
+      RingcentralPassword: ${{ secrets.RINGCENTRALPASSWORD }}
+      RingcentralJWT: ${{ secrets.RingcentralJWT }}
+      JwtSecret: ${{ secrets.JWTSECRET }}
+      AwsClusterName: ${{ secrets.AWSCLUSTERNAME }}
+      NextPublicMapboxAccessToken: ${{ secrets.NEXTPUBLICMAPBOXACCESSTOKEN }}
+      NextAuthSecret: ${{ secrets.NEXTAUTHSECRET }}
+      BILLING_NAME: ${{ secrets.BILLING_NAME }}
+      BILLING_EMAIL: ${{ secrets.BILLING_EMAIL }}
+    steps:
+      - name: Git clone the repository
+        uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          cache: yarn
+          node-version-file: .nvmrc
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          role-to-assume: arn:aws:iam::778248162016:role/GitHub
+          role-duration-seconds: 3600
+          aws-region: us-east-2
+      - name: Install dependencies
+        run: |
+          export NPM_TOKEN=${{ secrets.NPM_TOKEN }}
+          yarn --frozen-lockfile
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Start the app
+        run: yarn dev

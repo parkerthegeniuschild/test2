@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "rootDir": ".",
+    "target": "es6",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "types": ["vitest/globals"]
+  },
+  "include": [
+    "next-env.d.ts",
+    ".storybook/preview.tsx",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".eslintrc.cjs",
+    "postcss.config.cjs",
+    "next.config.js"
+  ],
+  "exclude": ["node_modules"]
+}

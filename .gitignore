@@ -1,0 +1,16 @@
+# dependencies
+node_modules
+
+# sst
+.sst
+.build
+
+# misc
+.DS_Store
+# .npmrc
+
+# local env files
+.env*.local
+
+awscli-bundle
+yarn-error.log*

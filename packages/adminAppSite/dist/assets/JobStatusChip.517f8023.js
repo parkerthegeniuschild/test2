@@ -1,0 +1,1 @@
+import{m as r,al as t,j as c,aE as m}from"./index.7dbc0443.js";const i=({status:e,fontSize:a=12})=>{const o=n(),s=t.find(l=>l.id===e);return c(m,{label:s==null?void 0:s.name,className:o.root,style:{background:s==null?void 0:s.color,fontSize:`${a}px`}})},n=r(()=>({root:{height:"24px"}}));export{i as J};
