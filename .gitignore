@@ -7,7 +7,7 @@ node_modules
 
 # misc
 .DS_Store
-# .npmrc
+.npmrc
 
 # local env files
 .env*.local

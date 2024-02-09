@@ -42,14 +42,18 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
-          role-to-assume: arn:aws:iam::778248162016:role/GitHub
-          role-duration-seconds: 3600
+          role-to-assume: arn:aws:iam::193886518961:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_TruckupDeveloper_244390a0e7091bc7
+          # role-duration-seconds: 3600
           aws-region: us-east-2
-      - name: Install dependencies
+      - name: Configure GitHub Packages Credentials
         run: |
-          export NPM_TOKEN=${{ secrets.NPM_TOKEN }}
-          yarn --frozen-lockfile
+          echo "
+          @gettruckup:registry=https://npm.pkg.github.com
+          //npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}
+          " > ~/.npmrc
+      - name: Install dependencies
+        run: yarn --frozen-lockfile
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Start the app
-        run: yarn dev
+        run: yarn dev --stage=mitchell
