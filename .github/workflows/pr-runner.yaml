@@ -1,11 +1,8 @@
-name: 'PR Runner'
+name: PR Runner
 
 on:
-  push:
-    branches:
-      - main
-  # pull_request:
-  #   types: [opened, edited, synchronize, reopened, ready_for_review]
+  pull_request:
+    types: [opened, edited, synchronize, reopened, ready_for_review]
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -13,24 +10,18 @@ concurrency:
 permissions:
   id-token: write
   contents: read
+  packages: read
+  pull-requests: read
+  actions: write
+  checks: write
+
+env:
+  NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
-  TestApp:
+  test:
     name: Test app
     runs-on: ubuntu-latest
-    env:
-      RingcentralClientId: ${{ secrets.RINGCENTRALCLIENTID }}
-      RingcentralClientSecret: ${{ secrets.RINGCENTRALCLIENTSECRET }}
-      RingcentralUsername: ${{ secrets.RINGCENTRALUSERNAME }}
-      RingcentralExtension: ${{ secrets.RINGCENTRALEXTENSION }}
-      RingcentralPassword: ${{ secrets.RINGCENTRALPASSWORD }}
-      RingcentralJWT: ${{ secrets.RingcentralJWT }}
-      JwtSecret: ${{ secrets.JWTSECRET }}
-      AwsClusterName: ${{ secrets.AWSCLUSTERNAME }}
-      NextPublicMapboxAccessToken: ${{ secrets.NEXTPUBLICMAPBOXACCESSTOKEN }}
-      NextAuthSecret: ${{ secrets.NEXTAUTHSECRET }}
-      BILLING_NAME: ${{ secrets.BILLING_NAME }}
-      BILLING_EMAIL: ${{ secrets.BILLING_EMAIL }}
     steps:
       - name: Git clone the repository
         uses: actions/checkout@v4
@@ -38,22 +29,20 @@ jobs:
         uses: actions/setup-node@v4
         with:
           cache: yarn
+          cache-dependency-path: yarn.lock
+          # scope: 'write'
           node-version-file: .nvmrc
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v2
-        with:
-          role-to-assume: arn:aws:iam::193886518961:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_TruckupDeveloper_244390a0e7091bc7
-          # role-duration-seconds: 3600
-          aws-region: us-east-2
-      - name: Configure GitHub Packages Credentials
-        run: |
-          echo "
-          @gettruckup:registry=https://npm.pkg.github.com
-          //npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}
-          " > ~/.npmrc
+          registry-url: 'https://npm.pkg.github.com'
+          always-auth: true
       - name: Install dependencies
-        run: yarn --frozen-lockfile
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Start the app
-        run: yarn dev --stage=mitchell
+        run: yarn install --frozen-lockfile
+      - name: Run tests
+        run: yarn test
+      - name: Test Report
+        uses: dorny/test-reporter@v1
+        if: always()
+        with:
+          name: JEST Tests
+          path: packages/functions/tests/reports/*.xml
+          reporter: jest-junit
+          token: ${{ secrets.GITHUB_TOKEN }}

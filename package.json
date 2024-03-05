@@ -16,10 +16,7 @@
     "console": "sst console",
     "typecheck": "tsc --noEmit",
     "postinstall": "patch-package",
-    "test": "sst bind vitest run",
-    "test:backend": "yarn test packages/functions",
-    "sso": "./scripts/aws-sso-login.sh",
-    "generate-open-api": "./scripts/generate-open-api.sh"
+    "test": "vitest packages/functions/tests/hello.test.ts -c packages/functions/vitest.config.ts"
   },
   "devDependencies": {
     "@tsconfig/node16": "^1.0.3",
@@ -33,7 +30,7 @@
     "sst": "2.40.1",
     "type-fest": "^4.8.3",
     "typescript": "5.1.6",
-    "vitest": "^0.34.3"
+    "vitest": "^1.3.1"
   },
   "workspaces": [
     "packages/*",
