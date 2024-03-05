@@ -14,3 +14,6 @@ node_modules
 
 awscli-bundle
 yarn-error.log*
+
+packages/functions/tests/coverage
+packages/functions/tests/reports

@@ -16,7 +16,6 @@
   },
   "dependencies": {
     "@ariakit/react": "0.4.1",
-    "@gettruckup/bindings": "0.0.15",
     "@hookform/resolvers": "3.3.4",
     "@react-google-maps/api": "2.19.2",
     "@react-input/mask": "1.0.20",

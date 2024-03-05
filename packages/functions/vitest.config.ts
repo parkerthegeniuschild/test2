@@ -9,10 +9,26 @@ const resolve = (_path: string) => path.resolve(__dirname, _path);
 export default defineConfig({
   plugins: [],
   test: {
-    threads: false,
+    // coverage: {
+    //   reportsDirectory: resolve('./tests/coverage'),
+    //   clean: true,
+    //   enabled: true,
+    //   reporter: ['text-summary', 'json-summary'],
+    //   include: ['packages/functions/tests'],
+    // },
+    reporters: [
+      [
+        'junit',
+        {
+          suiteName: 'E2E Backend Test',
+          outputFile: resolve('./tests/reports/report.xml'),
+        },
+      ],
+      'default',
+    ],
+    watch: false,
     isolate: false,
     globals: true,
-    setupFiles: [resolve('./tests/setupToken.ts')],
     environment: 'node',
     testTimeout: 15000,
     env: {
