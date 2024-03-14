@@ -1,8 +1,8 @@
 # Truckup-Stack
 
-## Getting Started m
+## Getting Started
 
-Some basic instructions on how to get this project set up. These instructions are a work in progress, please add additional tips in here if you find they are missing.
+Some basic instructions on how to get this project set up. These instructions are a work in progress, please add additional tips in here if you find they are missing!
 
 ### AWS Configuration
 
