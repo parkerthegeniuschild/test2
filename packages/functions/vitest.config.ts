@@ -9,23 +9,6 @@ const resolve = (_path: string) => path.resolve(__dirname, _path);
 export default defineConfig({
   plugins: [],
   test: {
-    // coverage: {
-    //   reportsDirectory: resolve('./tests/coverage'),
-    //   clean: true,
-    //   enabled: true,
-    //   reporter: ['text-summary', 'json-summary'],
-    //   include: ['packages/functions/tests'],
-    // },
-    reporters: [
-      [
-        'junit',
-        {
-          suiteName: 'E2E Backend Test',
-          outputFile: resolve('./tests/reports/report.xml'),
-        },
-      ],
-      'default',
-    ],
     watch: false,
     isolate: false,
     globals: true,

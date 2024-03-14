@@ -30,7 +30,6 @@ jobs:
         with:
           cache: yarn
           cache-dependency-path: yarn.lock
-          # scope: 'write'
           node-version-file: .nvmrc
           registry-url: 'https://npm.pkg.github.com'
           always-auth: true
@@ -38,11 +37,3 @@ jobs:
         run: yarn install --frozen-lockfile
       - name: Run tests
         run: yarn test
-      - name: Test Report
-        uses: dorny/test-reporter@v1
-        if: always()
-        with:
-          name: JEST Tests
-          path: packages/functions/tests/reports/*.xml
-          reporter: jest-junit
-          token: ${{ secrets.GITHUB_TOKEN }}
